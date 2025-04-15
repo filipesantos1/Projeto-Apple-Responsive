@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    /*margin interna*/
+    padding: 0;
+    /*margin externa*/
+    box-sizing: border-box;
+    /*é a forma como o CSS calcula as distâncias*/
+    font-family: sans-serif;
+}
+
+.logo {
+    width: 30px;
+    display: block;
+    margin-bottom: 20px;
+    /*largura da imagem*/
+
+}
+
+.caixa-azul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 5vw;
+    justify-content: space-between;
+    border-top: 3px solid #d3d3d3;
+
+
+}
+
+.menu {
+    margin-top: 30px;
+    padding: 1%;
+    display: flex;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button {
+    font-size: 14px;
+    color: #373737;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+
+}
+
+.texto {
+    margin-top: 20px;
+    /*adicionar margem superior*/
+    margin-left: 20px;
+    /*adicionar margem inferior*/
+}
+
+.titulo-iphone {
+    font-size: 30px;
+    /*tamanho da fonte*/
+}
+
+.titulo-segundario {
+    font-size: 40px;
+    /*tamanho da fonte*/
+    margin-top: 10px;
+    /*adicionar margin superior*/
+}
+
+.paragrafo {
+    font-size: 15px;
+    /*tamanho da fonte*/
+    margin-top: 10px;
+    /*adicionar margem superior*/
+}
+
+.preco {
+    font-size: 20px;
+    /*tamanho da fonte*/
+    color: #626262;
+    /*cor*/
+    font-weight: 300;
+    /*espessura da fonte do texto*/
+    margin-top: 15px;
+    /*adicionar margem superior*/
+}
+
+.botao {
+    margin-top: 40px;
+    /*adicionar margem inferior*/
+    cursor: pointer;
+    /*mudar a forma do ponteiro*/
+    padding: 15px 20px;
+    /*margem externa*/
+    background-color: #0071e3;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.troca-cor {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+
+.azul {
+
+    background-color: #81a5c4;
+    margin-top: 20px;
+
+
+}
+
+.amarelo {
+    background-color: #F7DA47;
+
+}
+
+.branco {
+    background-color: #C1C1C1;
+}
+
+.preto {
+    background-color: #272D33;
+}
+
+.roxo {
+    background-color: #AF52DE;
+}
+
+.vermelho {
+    background-color: #B50012;
+}
+
+.cor {
+    margin-top: 30px;
+    color: #626262;
+    font-weight: 700;
+    /*adicionar margem superior*/
+}
+
+.iphone {
+    width: 100%;
+    /*largura da imagem*/
+    max-width: 300px;
+    margin-top: 30px auto 0;
+    /*adicionar margem superior*/
+    display: flex;
+    justify-content: center;
+    /**/
+}
+
+.circulo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #81a5c4;
+    top: 0;
+    left: 0;
+    clip-path: circle(580px at right 790px);
+    z-index: -1;
+    border: none;
+    margin-top: 3%;
+    transition: clip-path 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .caixa-azul {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 5vw;
+    }
+
+    .circulo {
+        clip-path: circle(480px at right 600px);
+    }
+
+    .titulo-segundario {
+        font-size: 32px;
+    }
+
+    .titulo-iphone {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .caixa-azul {
+        padding: 40px 24px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .iphone {
+        width: 100%;
+        max-width: 280px;
+        margin: 30px auto 0;
+        justify-content: center;
+    }
+
+    .titulo-segundario {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .titulo-iphone {
+        font-size: 22px;
+    }
+
+    .paragrafo,
+    .preco {
+        font-size: 15px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 220px;
+        font-size: 18px;
+        padding: 14px 18px;
+    }
+
+    .circulo {
+        clip-path: circle(450px at right 280px);
+    }
+}
